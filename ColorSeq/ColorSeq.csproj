@@ -14,7 +14,12 @@
     <PackageTags>color;sequence;vt;csharp;library</PackageTags>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>OfficialAppIcon-ColorSeq-512.png</PackageIcon>
+    <ApplicationIcon>OfficialAppIcon-ColorSeq.ico</ApplicationIcon>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="OfficialAppIcon-ColorSeq.ico" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
       <Pack>True</Pack>
@@ -37,5 +42,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OfficialAppIcon-ColorSeq-512.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
