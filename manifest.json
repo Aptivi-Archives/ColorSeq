@@ -1,0 +1,188 @@
+{
+  "sitemap": {
+    "baseUrl": "https://aptivi.github.io/ColorSeq/"
+  },
+  "homepages": [],
+  "source_base_path": "/github/workspace/DocGen",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.Color.html",
+          "hash": "6AAfAHpnloBx2xajGxMkIvCq9/YQlXPnlv331Tcnjs8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.Color255.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.Color255.html",
+          "hash": "Ll/PvwpSKPUgdu7G7w4BnZ5oI0X+dzUue0Vib96pmdk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.ColorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.ColorType.html",
+          "hash": "TY3cbu+1wb5B4SMA0CSAxUjY1YH70MWV64uowJW/0O4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.ConsoleColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.ConsoleColors.html",
+          "hash": "0uhyyLiSdPVK732ZUwDz0tGrajLTv27llTzuxW1rQXY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.ConsoleColorsInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.ConsoleColorsInfo.html",
+          "hash": "tUtuEjKwIhoham6Vs2vWrDE3MQGNtOLJ2s744dtWEmA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.StringTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.StringTools.html",
+          "hash": "/Z80F++2okaODkfSVGEqjuqQsR64YW6AdHge8/9IgfE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.html",
+          "hash": "z+1anaXewkb6OsgLLox75RDbbDmB7eVGhcvLIs8uXkk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "En1dGAOsDTxZ39kgZJ2lyuqhIlFkyOQ+b0MdXtupGZQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "bm7ct/cPIzcsG7aF2CERIn305Z/b7dzGIDlv/7v8lH4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "PdH5xWWxt1SJUphSDRz68Vyd9jZ4H49RgMGr5YOo3nc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 7,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
