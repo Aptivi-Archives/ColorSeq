@@ -15,11 +15,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>OfficialAppIcon-ColorSeq-512.png</PackageIcon>
-    <ApplicationIcon>OfficialAppIcon-ColorSeq.ico</ApplicationIcon>
   </PropertyGroup>
-  <ItemGroup>
-    <Content Include="OfficialAppIcon-ColorSeq.ico" />
-  </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
       <Pack>True</Pack>
