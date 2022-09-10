@@ -124,7 +124,7 @@ namespace ColorSeq
                 VTSequenceBackground = Color255.GetEsc() + $"[48;5;{PlainSequence}m";
 
                 // Populate color properties
-                Type = ColorType._255Color;
+                Type = Convert.ToInt32(ColorSpecifier) >= 16 ? ColorType._255Color : ColorType._16Color;
                 IsBright = ColorsInfo.IsBright;
                 IsDark = ColorsInfo.IsDark;
                 R = ColorsInfo.R;
@@ -209,7 +209,7 @@ namespace ColorSeq
             VTSequenceBackground = Color255.GetEsc() + $"[48;5;{PlainSequence}m";
 
             // Populate color properties
-            Type = ColorType._255Color;
+            Type = ColorNum >= 16 ? ColorType._255Color : ColorType._16Color;
             IsBright = ColorsInfo.IsBright;
             IsDark = ColorsInfo.IsDark;
             R = ColorsInfo.R;

@@ -37,6 +37,35 @@ namespace ColorSeq.Tests
         public void TestInitializeColorInstanceFrom255Colors()
         {
             // Create instance
+            var ColorInstance = new Color(18);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("18");
+            ColorInstance.Type.ShouldBe(ColorType._255Color);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;5;18m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;5;18m");
+            ColorInstance.R.ShouldBe(0);
+            ColorInstance.G.ShouldBe(0);
+            ColorInstance.B.ShouldBe(135);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#000087");
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from 16 colors
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFrom16Colors()
+        {
+            // Create instance
             var ColorInstance = new Color(13);
 
             // Check for null
@@ -47,7 +76,7 @@ namespace ColorSeq.Tests
 
             // Check for property correctness
             ColorInstance.PlainSequence.ShouldBe("13");
-            ColorInstance.Type.ShouldBe(ColorType._255Color);
+            ColorInstance.Type.ShouldBe(ColorType._16Color);
             ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;5;13m");
             ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;5;13m");
             ColorInstance.R.ShouldBe(255);

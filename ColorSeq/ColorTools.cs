@@ -34,8 +34,12 @@ namespace ColorSeq
         /// </summary>
         TrueColor,
         /// <summary>
-        /// Color is a 256-bit color
+        /// Color is a 8-bit color
         /// </summary>
-        _255Color
+        _255Color,
+        /// <summary>
+        /// Color is a 4-bit color
+        /// </summary>
+        _16Color
     }
 }
