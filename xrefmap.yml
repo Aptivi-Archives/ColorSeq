@@ -225,6 +225,12 @@ references:
   commentId: T:ColorSeq.ColorType
   fullName: ColorSeq.ColorType
   nameWithType: ColorType
+- uid: ColorSeq.ColorType._16Color
+  name: _16Color
+  href: api/ColorSeq.ColorType.html#ColorSeq_ColorType__16Color
+  commentId: F:ColorSeq.ColorType._16Color
+  fullName: ColorSeq.ColorType._16Color
+  nameWithType: ColorType._16Color
 - uid: ColorSeq.ColorType._255Color
   name: _255Color
   href: api/ColorSeq.ColorType.html#ColorSeq_ColorType__255Color

@@ -12,7 +12,7 @@
   "api/ColorSeq.ColorType.html": {
     "href": "api/ColorSeq.ColorType.html",
     "title": "Enum ColorType | ColorSeq API - Aptivi",
-    "keywords": "Enum ColorType Color type enumeration Namespace : ColorSeq Assembly : ColorSeq.dll Syntax public enum ColorType : int Fields Name Description _255Color Color is a 256-bit color TrueColor Color is a true color"
+    "keywords": "Enum ColorType Color type enumeration Namespace : ColorSeq Assembly : ColorSeq.dll Syntax public enum ColorType : int Fields Name Description _16Color Color is a 4-bit color _255Color Color is a 8-bit color TrueColor Color is a true color"
   },
   "api/ColorSeq.ConsoleColors.html": {
     "href": "api/ColorSeq.ConsoleColors.html",
