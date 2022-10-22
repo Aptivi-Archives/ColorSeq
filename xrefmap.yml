@@ -13,6 +13,12 @@ references:
   commentId: T:ColorSeq.Color
   fullName: ColorSeq.Color
   nameWithType: Color
+- uid: ColorSeq.Color.#ctor(ColorSeq.ConsoleColors)
+  name: Color(ConsoleColors)
+  href: api/ColorSeq.Color.html#ColorSeq_Color__ctor_ColorSeq_ConsoleColors_
+  commentId: M:ColorSeq.Color.#ctor(ColorSeq.ConsoleColors)
+  fullName: ColorSeq.Color.Color(ColorSeq.ConsoleColors)
+  nameWithType: Color.Color(ConsoleColors)
 - uid: ColorSeq.Color.#ctor(System.Int32)
   name: Color(Int32)
   href: api/ColorSeq.Color.html#ColorSeq_Color__ctor_System_Int32_
