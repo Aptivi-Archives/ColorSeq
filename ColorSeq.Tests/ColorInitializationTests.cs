@@ -144,5 +144,34 @@ namespace ColorSeq.Tests
             ColorInstance.IsDark.ShouldBeTrue();
             ColorInstance.Hex.ShouldBe("#0F0F0F");
         }
+
+        /// <summary>
+        /// Tests initializing color instance from color name taken from <see cref="ConsoleColors"/>
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromName()
+        {
+            // Create instance
+            var ColorInstance = new Color("Magenta");
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("13");
+            ColorInstance.Type.ShouldBe(ColorType._16Color);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;5;13m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;5;13m");
+            ColorInstance.R.ShouldBe(255);
+            ColorInstance.G.ShouldBe(0);
+            ColorInstance.B.ShouldBe(255);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#FF00FF");
+        }
     }
 }

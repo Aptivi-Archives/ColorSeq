@@ -114,17 +114,17 @@ namespace ColorSeq
                     throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                 }
             }
-            else if (StringTools.IsStringNumeric(ColorSpecifier))
+            else if (StringTools.IsStringNumeric(ColorSpecifier) || Enum.IsDefined(typeof(ConsoleColors), ColorSpecifier))
             {
                 // Form the sequences using the information from the color details
                 var ColorsInfo = new ConsoleColorsInfo((ConsoleColors)Enum.Parse(typeof(ConsoleColors), ColorSpecifier));
-                PlainSequence = ColorSpecifier;
-                PlainSequenceEnclosed = ColorSpecifier;
+                PlainSequence = $"{ColorsInfo.ColorID}";
+                PlainSequenceEnclosed = $"{ColorsInfo.ColorID}";
                 VTSequenceForeground = Color255.GetEsc() + $"[38;5;{PlainSequence}m";
                 VTSequenceBackground = Color255.GetEsc() + $"[48;5;{PlainSequence}m";
 
                 // Populate color properties
-                Type = Convert.ToInt32(ColorSpecifier) >= 16 ? ColorType._255Color : ColorType._16Color;
+                Type = ColorsInfo.ColorID >= 16 ? ColorType._255Color : ColorType._16Color;
                 IsBright = ColorsInfo.IsBright;
                 IsDark = ColorsInfo.IsDark;
                 R = ColorsInfo.R;
