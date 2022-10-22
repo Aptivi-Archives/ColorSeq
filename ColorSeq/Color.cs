@@ -197,6 +197,14 @@ namespace ColorSeq
         /// <summary>
         /// Makes a new instance of color class from specifier.
         /// </summary>
+        /// <param name="ColorDef">The color taken from <see cref="ConsoleColors"/></param>
+        /// <exception cref="Exceptions.ColorException"></exception>
+        public Color(ConsoleColors ColorDef) 
+            : this(Convert.ToInt32(ColorDef)) { }
+
+        /// <summary>
+        /// Makes a new instance of color class from specifier.
+        /// </summary>
         /// <param name="ColorNum">The color number</param>
         /// <exception cref="Exceptions.ColorException"></exception>
         public Color(int ColorNum)
