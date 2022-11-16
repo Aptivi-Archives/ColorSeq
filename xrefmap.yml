@@ -7,6 +7,36 @@ references:
   commentId: N:ColorSeq
   fullName: ColorSeq
   nameWithType: ColorSeq
+- uid: ColorSeq.Accessibility
+  name: ColorSeq.Accessibility
+  href: api/ColorSeq.Accessibility.html
+  commentId: N:ColorSeq.Accessibility
+  fullName: ColorSeq.Accessibility
+  nameWithType: ColorSeq.Accessibility
+- uid: ColorSeq.Accessibility.Deficiency
+  name: Deficiency
+  href: api/ColorSeq.Accessibility.Deficiency.html
+  commentId: T:ColorSeq.Accessibility.Deficiency
+  fullName: ColorSeq.Accessibility.Deficiency
+  nameWithType: Deficiency
+- uid: ColorSeq.Accessibility.Deficiency.Deutan
+  name: Deutan
+  href: api/ColorSeq.Accessibility.Deficiency.html#ColorSeq_Accessibility_Deficiency_Deutan
+  commentId: F:ColorSeq.Accessibility.Deficiency.Deutan
+  fullName: ColorSeq.Accessibility.Deficiency.Deutan
+  nameWithType: Deficiency.Deutan
+- uid: ColorSeq.Accessibility.Deficiency.Protan
+  name: Protan
+  href: api/ColorSeq.Accessibility.Deficiency.html#ColorSeq_Accessibility_Deficiency_Protan
+  commentId: F:ColorSeq.Accessibility.Deficiency.Protan
+  fullName: ColorSeq.Accessibility.Deficiency.Protan
+  nameWithType: Deficiency.Protan
+- uid: ColorSeq.Accessibility.Deficiency.Tritan
+  name: Tritan
+  href: api/ColorSeq.Accessibility.Deficiency.html#ColorSeq_Accessibility_Deficiency_Tritan
+  commentId: F:ColorSeq.Accessibility.Deficiency.Tritan
+  fullName: ColorSeq.Accessibility.Deficiency.Tritan
+  nameWithType: Deficiency.Tritan
 - uid: ColorSeq.Color
   name: Color
   href: api/ColorSeq.Color.html
@@ -225,6 +255,77 @@ references:
   isSpec: "True"
   fullName: ColorSeq.Color255.Initialize255
   nameWithType: Color255.Initialize255
+- uid: ColorSeq.ColorTools
+  name: ColorTools
+  href: api/ColorSeq.ColorTools.html
+  commentId: T:ColorSeq.ColorTools
+  fullName: ColorSeq.ColorTools
+  nameWithType: ColorTools
+- uid: ColorSeq.ColorTools.ColorDeficiency
+  name: ColorDeficiency
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_ColorDeficiency
+  commentId: P:ColorSeq.ColorTools.ColorDeficiency
+  fullName: ColorSeq.ColorTools.ColorDeficiency
+  nameWithType: ColorTools.ColorDeficiency
+- uid: ColorSeq.ColorTools.ColorDeficiency*
+  name: ColorDeficiency
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_ColorDeficiency_
+  commentId: Overload:ColorSeq.ColorTools.ColorDeficiency
+  isSpec: "True"
+  fullName: ColorSeq.ColorTools.ColorDeficiency
+  nameWithType: ColorTools.ColorDeficiency
+- uid: ColorSeq.ColorTools.ColorDeficiencySeverity
+  name: ColorDeficiencySeverity
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_ColorDeficiencySeverity
+  commentId: P:ColorSeq.ColorTools.ColorDeficiencySeverity
+  fullName: ColorSeq.ColorTools.ColorDeficiencySeverity
+  nameWithType: ColorTools.ColorDeficiencySeverity
+- uid: ColorSeq.ColorTools.ColorDeficiencySeverity*
+  name: ColorDeficiencySeverity
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_ColorDeficiencySeverity_
+  commentId: Overload:ColorSeq.ColorTools.ColorDeficiencySeverity
+  isSpec: "True"
+  fullName: ColorSeq.ColorTools.ColorDeficiencySeverity
+  nameWithType: ColorTools.ColorDeficiencySeverity
+- uid: ColorSeq.ColorTools.EnableColorTransformation
+  name: EnableColorTransformation
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_EnableColorTransformation
+  commentId: P:ColorSeq.ColorTools.EnableColorTransformation
+  fullName: ColorSeq.ColorTools.EnableColorTransformation
+  nameWithType: ColorTools.EnableColorTransformation
+- uid: ColorSeq.ColorTools.EnableColorTransformation*
+  name: EnableColorTransformation
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_EnableColorTransformation_
+  commentId: Overload:ColorSeq.ColorTools.EnableColorTransformation
+  isSpec: "True"
+  fullName: ColorSeq.ColorTools.EnableColorTransformation
+  nameWithType: ColorTools.EnableColorTransformation
+- uid: ColorSeq.ColorTools.LinearRGBTosRGB(System.Double)
+  name: LinearRGBTosRGB(Double)
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_LinearRGBTosRGB_System_Double_
+  commentId: M:ColorSeq.ColorTools.LinearRGBTosRGB(System.Double)
+  fullName: ColorSeq.ColorTools.LinearRGBTosRGB(System.Double)
+  nameWithType: ColorTools.LinearRGBTosRGB(Double)
+- uid: ColorSeq.ColorTools.LinearRGBTosRGB*
+  name: LinearRGBTosRGB
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_LinearRGBTosRGB_
+  commentId: Overload:ColorSeq.ColorTools.LinearRGBTosRGB
+  isSpec: "True"
+  fullName: ColorSeq.ColorTools.LinearRGBTosRGB
+  nameWithType: ColorTools.LinearRGBTosRGB
+- uid: ColorSeq.ColorTools.SRGBToLinearRGB(System.Int32)
+  name: SRGBToLinearRGB(Int32)
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_SRGBToLinearRGB_System_Int32_
+  commentId: M:ColorSeq.ColorTools.SRGBToLinearRGB(System.Int32)
+  fullName: ColorSeq.ColorTools.SRGBToLinearRGB(System.Int32)
+  nameWithType: ColorTools.SRGBToLinearRGB(Int32)
+- uid: ColorSeq.ColorTools.SRGBToLinearRGB*
+  name: SRGBToLinearRGB
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_SRGBToLinearRGB_
+  commentId: Overload:ColorSeq.ColorTools.SRGBToLinearRGB
+  isSpec: "True"
+  fullName: ColorSeq.ColorTools.SRGBToLinearRGB
+  nameWithType: ColorTools.SRGBToLinearRGB
 - uid: ColorSeq.ColorType
   name: ColorType
   href: api/ColorSeq.ColorType.html

@@ -17,11 +17,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.Accessibility.Deficiency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.Accessibility.Deficiency.html",
+          "hash": "xQ3RmSuJLZ8czSF/3mEIIsjlSQxxMw5Sm0bXUysnH9s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.Accessibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.Accessibility.html",
+          "hash": "/qscLu1RI8Ri+TYlkf5MWy5mXksVYgc5/YA9Jj1mzFQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ColorSeq.Color.yml",
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.Color.html",
-          "hash": "9sjVHgNNT1+hwzp6FlmbilCMtHPwkJHdIm0QfEn78J4="
+          "hash": "x32A+AcEu1WfBDGz1Cpv6QKe/vSMpJPLP4XWSnqgEcI="
         }
       },
       "is_incremental": false,
@@ -41,11 +65,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ColorSeq.ColorTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ColorSeq.ColorTools.html",
+          "hash": "Y2xInBXKEaEkknSy3zEIuWK8AX0D/UNP2ahmGS8rkgU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ColorSeq.ColorType.yml",
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.ColorType.html",
-          "hash": "IuknDYYCQopqd7SkiPo2UVpnkI4I+41ZVSM6rZURT44="
+          "hash": "tUH0U5A5HrVOjEFmpJri/CySR7eqM38kzmNDXZI2IOM="
         }
       },
       "is_incremental": false,
@@ -93,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.html",
-          "hash": "z+1anaXewkb6OsgLLox75RDbbDmB7eVGhcvLIs8uXkk="
+          "hash": "YZPPIXVf6ziX7j8qmwQ6hParDCzeJqbowshdt+G/lg8="
         }
       },
       "is_incremental": false,
@@ -105,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "En1dGAOsDTxZ39kgZJ2lyuqhIlFkyOQ+b0MdXtupGZQ="
+          "hash": "VFWE9/uKKuWJpv5QAYoX91IdNrfxDJr38kgXaURd7kk="
         }
       },
       "is_incremental": false,
@@ -156,7 +192,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 10,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

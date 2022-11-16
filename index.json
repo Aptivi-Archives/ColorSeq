@@ -1,4 +1,14 @@
 {
+  "api/ColorSeq.Accessibility.Deficiency.html": {
+    "href": "api/ColorSeq.Accessibility.Deficiency.html",
+    "title": "Enum Deficiency | ColorSeq API - Aptivi",
+    "keywords": "Enum Deficiency Color deficiency Namespace : ColorSeq.Accessibility Assembly : ColorSeq.dll Syntax public enum Deficiency : int Fields Name Description Deutan Red/green color blindness. It makes green look more red Protan Red/green color blindness. It makes red look more green Tritan Blue/yellow color blindness."
+  },
+  "api/ColorSeq.Accessibility.html": {
+    "href": "api/ColorSeq.Accessibility.html",
+    "title": "Namespace ColorSeq.Accessibility | ColorSeq API - Aptivi",
+    "keywords": "Namespace ColorSeq.Accessibility Enums Deficiency Color deficiency"
+  },
   "api/ColorSeq.Color.html": {
     "href": "api/ColorSeq.Color.html",
     "title": "Class Color | ColorSeq API - Aptivi",
@@ -8,6 +18,11 @@
     "href": "api/ColorSeq.Color255.html",
     "title": "Class Color255 | ColorSeq API - Aptivi",
     "keywords": "Class Color255 Inheritance System.Object Color255 Namespace : ColorSeq Assembly : ColorSeq.dll Syntax public static class Color255 : object Fields | Improve this Doc View Source ColorDataJson The 255 console colors data JSON token to get information about these colors Declaration public static readonly JToken ColorDataJson Field Value Type Description JToken Methods | Improve this Doc View Source Initialize255() [Windows] Initializes 255 color support Declaration public static void Initialize255()"
+  },
+  "api/ColorSeq.ColorTools.html": {
+    "href": "api/ColorSeq.ColorTools.html",
+    "title": "Class ColorTools | ColorSeq API - Aptivi",
+    "keywords": "Class ColorTools Color tools and management Inheritance System.Object ColorTools Namespace : ColorSeq Assembly : ColorSeq.dll Syntax public static class ColorTools : object Properties | Improve this Doc View Source ColorDeficiency The color deficiency or color blindness type Declaration public static Deficiency ColorDeficiency { get; set; } Property Value Type Description Deficiency | Improve this Doc View Source ColorDeficiencySeverity The color deficiency severity Declaration public static double ColorDeficiencySeverity { get; set; } Property Value Type Description System.Double | Improve this Doc View Source EnableColorTransformation Enables the color transformation to adjust to color blindness upon making a new instance of color Declaration public static bool EnableColorTransformation { get; set; } Property Value Type Description System.Boolean Methods | Improve this Doc View Source LinearRGBTosRGB(Double) Converts from Linear RGB to sRGB using a linear RGB number Declaration public static int LinearRGBTosRGB(double linear) Parameters Type Name Description System.Double linear Linear RGB number from 0 to 1 Returns Type Description System.Int32 sRGB value from 0 to 255 | Improve this Doc View Source SRGBToLinearRGB(Int32) Converts from sRGB to Linear RGB using a color number Declaration public static double SRGBToLinearRGB(int colorNum) Parameters Type Name Description System.Int32 colorNum Color number from 0 to 255 Returns Type Description System.Double Linear RGB number ranging from 0 to 1"
   },
   "api/ColorSeq.ColorType.html": {
     "href": "api/ColorSeq.ColorType.html",
@@ -27,7 +42,7 @@
   "api/ColorSeq.html": {
     "href": "api/ColorSeq.html",
     "title": "Namespace ColorSeq | ColorSeq API - Aptivi",
-    "keywords": "Namespace ColorSeq Classes Color Color255 ConsoleColorsInfo StringTools Enums ColorType Color type enumeration ConsoleColors All 255 console colors"
+    "keywords": "Namespace ColorSeq Classes Color Color255 ColorTools Color tools and management ConsoleColorsInfo StringTools Enums ColorType Color type enumeration ConsoleColors All 255 console colors"
   },
   "api/ColorSeq.StringTools.html": {
     "href": "api/ColorSeq.StringTools.html",
