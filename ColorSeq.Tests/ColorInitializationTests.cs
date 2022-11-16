@@ -59,6 +59,198 @@ namespace ColorSeq.Tests
         }
 
         /// <summary>
+        /// Tests initializing color instance from 255 colors (Protanopia)
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFrom255ColorsProtanopia()
+        {
+            // Create instance
+            ColorTools.EnableColorTransformation = true;
+            ColorTools.ColorDeficiency = Accessibility.Deficiency.Protan;
+            ColorTools.ColorDeficiencySeverity = 1.0;
+            var ColorInstance = new Color(18);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("0;24;135");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;2;0;24;135m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;2;0;24;135m");
+            ColorInstance.R.ShouldBe(0);
+            ColorInstance.G.ShouldBe(24);
+            ColorInstance.B.ShouldBe(135);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#001887");
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from 255 colors (Protanomaly)
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFrom255ColorsProtanomaly()
+        {
+            // Create instance
+            ColorTools.EnableColorTransformation = true;
+            ColorTools.ColorDeficiency = Accessibility.Deficiency.Protan;
+            ColorTools.ColorDeficiencySeverity = 0.6;
+            var ColorInstance = new Color(18);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("0;17;135");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;2;0;17;135m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;2;0;17;135m");
+            ColorInstance.R.ShouldBe(0);
+            ColorInstance.G.ShouldBe(17);
+            ColorInstance.B.ShouldBe(135);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#001187");
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from 255 colors (Deuteranopia)
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFrom255ColorsDeuteranopia()
+        {
+            // Create instance
+            ColorTools.EnableColorTransformation = true;
+            ColorTools.ColorDeficiency = Accessibility.Deficiency.Deutan;
+            ColorTools.ColorDeficiencySeverity = 1.0;
+            var ColorInstance = new Color(18);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("0;41;134");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;2;0;41;134m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;2;0;41;134m");
+            ColorInstance.R.ShouldBe(0);
+            ColorInstance.G.ShouldBe(41);
+            ColorInstance.B.ShouldBe(134);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#002986");
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from 255 colors (Deuteranomaly)
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFrom255ColorsDeuteranomaly()
+        {
+            // Create instance
+            ColorTools.EnableColorTransformation = true;
+            ColorTools.ColorDeficiency = Accessibility.Deficiency.Deutan;
+            ColorTools.ColorDeficiencySeverity = 0.6;
+            var ColorInstance = new Color(18);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("0;31;134");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;2;0;31;134m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;2;0;31;134m");
+            ColorInstance.R.ShouldBe(0);
+            ColorInstance.G.ShouldBe(31);
+            ColorInstance.B.ShouldBe(134);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#001F86");
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from 255 colors (Tritanopia)
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFrom255ColorsTritanopia()
+        {
+            // Create instance
+            ColorTools.EnableColorTransformation = true;
+            ColorTools.ColorDeficiency = Accessibility.Deficiency.Tritan;
+            ColorTools.ColorDeficiencySeverity = 1.0;
+            var ColorInstance = new Color(18);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("0;48;69");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;2;0;48;69m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;2;0;48;69m");
+            ColorInstance.R.ShouldBe(0);
+            ColorInstance.G.ShouldBe(48);
+            ColorInstance.B.ShouldBe(69);
+            ColorInstance.IsBright.ShouldBeFalse();
+            ColorInstance.IsDark.ShouldBeTrue();
+            ColorInstance.Hex.ShouldBe("#003045");
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from 255 colors (Tritanomaly)
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFrom255ColorsTritanomaly()
+        {
+            // Create instance
+            ColorTools.EnableColorTransformation = true;
+            ColorTools.ColorDeficiency = Accessibility.Deficiency.Tritan;
+            ColorTools.ColorDeficiencySeverity = 0.6;
+            var ColorInstance = new Color(18);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("0;36;102");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;2;0;36;102m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;2;0;36;102m");
+            ColorInstance.R.ShouldBe(0);
+            ColorInstance.G.ShouldBe(36);
+            ColorInstance.B.ShouldBe(102);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#002466");
+        }
+
+        /// <summary>
         /// Tests initializing color instance from 16 colors
         /// </summary>
         [Test]
