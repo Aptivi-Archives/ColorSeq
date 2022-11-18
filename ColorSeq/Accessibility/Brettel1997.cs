@@ -22,6 +22,8 @@
  * SOFTWARE.
  */
 
+using System;
+
 namespace ColorSeq.Accessibility
 {
     // Refer to Hans Brettel, Françoise Viénot, and John D. Mollon, "Computerized simulation of color appearance for dichromats," J. Opt. Soc. Am. A 14, 2647-2655 (1997)
@@ -90,6 +92,16 @@ namespace ColorSeq.Accessibility
 
         public static (int, int, int) Transform(int r, int g, int b, Deficiency def, double severity)
         {
+            // Check values
+            if (r < 0 || r > 255)
+                throw new ArgumentOutOfRangeException("r");
+            if (g < 0 || g > 255)
+                throw new ArgumentOutOfRangeException("g");
+            if (b < 0 || b > 255)
+                throw new ArgumentOutOfRangeException("b");
+            if (severity < 0.0d || severity > 1.0d)
+                throw new ArgumentOutOfRangeException("severity");
+
             // Select what Brettel deficiency profile to choose how to transform the three RGB values
             BrettelParameters bp = null;
             switch (def)
