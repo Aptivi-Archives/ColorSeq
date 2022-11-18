@@ -29,6 +29,12 @@ namespace ColorSeq.Tests
     [TestFixture]
     public partial class ColorInitializationTests
     {
+        [SetUp]
+        public void ResetColorDeficiency()
+        {
+            ColorTools.EnableColorTransformation = false;
+        }
+
         /// <summary>
         /// Tests initializing color instance from 255 colors
         /// </summary>
