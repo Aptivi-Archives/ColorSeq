@@ -6,6 +6,14 @@ ColorSeq is the library that manages the VT color sequences and gets information
 
 **jonasjacek**  -  *[Console color data](https://jonasjacek.github.io/colors/)*
 
+**DaltonLens** - *[Inspiration to create color blindness feature](https://github.com/DaltonLens/libDaltonLens)*
+
+## Bibilography for color blindness
+
+The color blindness feature was created with the help of:
+
+- [Hans Brettel, Françoise Viénot, and John D. Mollon, "Computerized simulation of color appearance for dichromats," J. Opt. Soc. Am. A 14, 2647-2655 (1997)](https://opg.optica.org/josaa/abstract.cfm?uri=josaa-14-10-2647)
+
 ### License
 
 ```
