@@ -79,8 +79,19 @@ namespace ColorSeq
         /// <summary>
         /// Empty color singleton
         /// </summary>
-        public static Color Empty { get; private set; } = new Color(0, 0, 0);
+        public static Color Empty
+        {
+            get
+            {
+                // Get cached value if cached
+                if (ColorTools._empty != null)
+                    return ColorTools._empty;
 
+                // Else, cache the empty value and return it
+                ColorTools._empty = new Color(0);
+                return ColorTools._empty;
+            }
+        }
         /// <summary>
         /// Makes a new instance of color class from specifier.
         /// </summary>
@@ -248,7 +259,7 @@ namespace ColorSeq
         /// </summary>
         /// <param name="ColorDef">The color taken from <see cref="ConsoleColors"/></param>
         /// <exception cref="Exceptions.ColorException"></exception>
-        public Color(ConsoleColors ColorDef) 
+        public Color(ConsoleColors ColorDef)
             : this(Convert.ToInt32(ColorDef)) { }
 
         /// <summary>

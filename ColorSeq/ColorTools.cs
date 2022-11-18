@@ -52,6 +52,7 @@ namespace ColorSeq
     /// </summary>
     public static class ColorTools
     {
+        internal static Color _empty;
         private static double _deficiency = 0.6;
         /// <summary>
         /// Enables the color transformation to adjust to color blindness upon making a new instance of color

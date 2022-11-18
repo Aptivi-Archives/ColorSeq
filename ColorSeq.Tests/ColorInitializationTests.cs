@@ -394,5 +394,34 @@ namespace ColorSeq.Tests
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#FF00FF");
         }
+
+        /// <summary>
+        /// Tests getting empty color
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestGetEmptyColor()
+        {
+            // Create instance
+            var ColorInstance = Color.Empty;
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("0");
+            ColorInstance.Type.ShouldBe(ColorType._16Color);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;5;0m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;5;0m");
+            ColorInstance.R.ShouldBe(0);
+            ColorInstance.G.ShouldBe(0);
+            ColorInstance.B.ShouldBe(0);
+            ColorInstance.IsBright.ShouldBeFalse();
+            ColorInstance.IsDark.ShouldBeTrue();
+            ColorInstance.Hex.ShouldBe("#000000");
+        }
     }
 }
