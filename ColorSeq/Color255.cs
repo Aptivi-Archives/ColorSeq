@@ -67,11 +67,9 @@ namespace ColorSeq
         public static void Initialize255()
         {
             var handle = GetStdHandle(-11);
-            Color255.GetConsoleMode(handle, out int mode);
+            GetConsoleMode(handle, out int mode);
             if (!(mode == 7))
-            {
                 SetConsoleMode(handle, mode | 0x4);
-            }
         }
 
         /// <summary>
