@@ -4,7 +4,7 @@ dotnet_csproj:
   patch: true
   file: '**\*.csproj'
   version: ''
-  package_version: 1.0.2-build{build}
+  package_version: 1.1.1-build{build}
 environment:
   WEBHOOK_URL:
     secure: p3nnkhnWtqFFH8UJ1eaKFfRjFPlOVhNtmLjd94R7+KSGMM5gIaSCCXQc0+d96gbwUsdAV1QA/fjzXIejubMKb0cUA0BbOULQuXQeKiTJxMDovuiLbp3lQKP5MAECLchRQsZTWPu4BTfol4QdF9iMhq5n+Opgpr0Ro7QA0ttM+so=
