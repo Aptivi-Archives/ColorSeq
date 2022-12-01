@@ -300,6 +300,19 @@ references:
   isSpec: "True"
   fullName: ColorSeq.ColorTools.EnableColorTransformation
   nameWithType: ColorTools.EnableColorTransformation
+- uid: ColorSeq.ColorTools.EnableSimpleColorTransformation
+  name: EnableSimpleColorTransformation
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_EnableSimpleColorTransformation
+  commentId: P:ColorSeq.ColorTools.EnableSimpleColorTransformation
+  fullName: ColorSeq.ColorTools.EnableSimpleColorTransformation
+  nameWithType: ColorTools.EnableSimpleColorTransformation
+- uid: ColorSeq.ColorTools.EnableSimpleColorTransformation*
+  name: EnableSimpleColorTransformation
+  href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_EnableSimpleColorTransformation_
+  commentId: Overload:ColorSeq.ColorTools.EnableSimpleColorTransformation
+  isSpec: "True"
+  fullName: ColorSeq.ColorTools.EnableSimpleColorTransformation
+  nameWithType: ColorTools.EnableSimpleColorTransformation
 - uid: ColorSeq.ColorTools.LinearRGBTosRGB(System.Double)
   name: LinearRGBTosRGB(Double)
   href: api/ColorSeq.ColorTools.html#ColorSeq_ColorTools_LinearRGBTosRGB_System_Double_
