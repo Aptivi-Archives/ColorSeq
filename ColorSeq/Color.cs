@@ -116,7 +116,11 @@ namespace ColorSeq
                     if (ColorTools.EnableColorTransformation)
                     {
                         // We'll transform.
-                        (int, int, int) transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                        (int, int, int) transformed;
+                        if (ColorTools.EnableSimpleColorTransformation)
+                            transformed = Vienot1999.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                        else
+                            transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
                         r = transformed.Item1;
                         g = transformed.Item2;
                         b = transformed.Item3;
@@ -153,7 +157,11 @@ namespace ColorSeq
                 if (ColorTools.EnableColorTransformation)
                 {
                     // We'll transform.
-                    (int, int, int) transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                    (int, int, int) transformed;
+                    if (ColorTools.EnableSimpleColorTransformation)
+                        transformed = Vienot1999.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                    else
+                        transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
                     r = transformed.Item1;
                     g = transformed.Item2;
                     b = transformed.Item3;
@@ -183,7 +191,11 @@ namespace ColorSeq
                 if (ColorTools.EnableColorTransformation)
                 {
                     // We'll transform.
-                    (int, int, int) transformed = Brettel1997.Transform(R, G, B, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                    (int, int, int) transformed;
+                    if (ColorTools.EnableSimpleColorTransformation)
+                        transformed = Vienot1999.Transform(R, G, B, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                    else
+                        transformed = Brettel1997.Transform(R, G, B, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
                     R = transformed.Item1;
                     G = transformed.Item2;
                     B = transformed.Item3;
@@ -232,7 +244,11 @@ namespace ColorSeq
             if (ColorTools.EnableColorTransformation)
             {
                 // We'll transform.
-                (int, int, int) transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                (int, int, int) transformed;
+                if (ColorTools.EnableSimpleColorTransformation)
+                    transformed = Vienot1999.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                else
+                    transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
                 r = transformed.Item1;
                 g = transformed.Item2;
                 b = transformed.Item3;
@@ -279,7 +295,11 @@ namespace ColorSeq
             if (ColorTools.EnableColorTransformation)
             {
                 // We'll transform.
-                (int, int, int) transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                (int, int, int) transformed;
+                if (ColorTools.EnableSimpleColorTransformation)
+                    transformed = Vienot1999.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
+                else
+                    transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
                 r = transformed.Item1;
                 g = transformed.Item2;
                 b = transformed.Item3;

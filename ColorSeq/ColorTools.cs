@@ -58,6 +58,10 @@ namespace ColorSeq
         /// Enables the color transformation to adjust to color blindness upon making a new instance of color
         /// </summary>
         public static bool EnableColorTransformation { get; set; } = false;
+        /// <summary>
+        /// Enables the simple color transformation. This changes formula from Brettel 1997 (value is false) to Vienot 1999 (value is true)
+        /// </summary>
+        public static bool EnableSimpleColorTransformation { get; set; } = false;
 
         /// <summary>
         /// The color deficiency or color blindness type
