@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.Accessibility.Deficiency.html",
-          "hash": "xQ3RmSuJLZ8czSF/3mEIIsjlSQxxMw5Sm0bXUysnH9s="
+          "hash": "2XgeYGZY8ty8nAILB2O8Xm+uskPa0hszQ/8DGgYInTM="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.Color.html",
-          "hash": "RkZvbKND2bGdyNuOSFITI3xw/2QRlOlVz07yxOU4TH8="
+          "hash": "3LiAujxCdZPOYPQUJuzBIOUIVxfKy2z+/Iv5NXq7jzI="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.Color255.html",
-          "hash": "Ll/PvwpSKPUgdu7G7w4BnZ5oI0X+dzUue0Vib96pmdk="
+          "hash": "Fv8bMVVQnudL1uMXIPtmOUX3HnKiWplu7Lbpe0hzAUk="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.ColorTools.html",
-          "hash": "ERd9c+aSA7SKVPocPhXS0kCLbe31qsn50RxaOuRqVXA="
+          "hash": "x6mEuPXNxjl18Q7cBjqMFsennvSBDiPs4rl41lCerT8="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.ColorType.html",
-          "hash": "tUH0U5A5HrVOjEFmpJri/CySR7eqM38kzmNDXZI2IOM="
+          "hash": "n0YHKgLcgCJax7snoAzg2Yx1gCoC4ON6rY21HOvAf2M="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.ConsoleColors.html",
-          "hash": "x4CMUAMC+6P4j0WUlTHtftrXmZK8jCc6IIjWsEa7Yzw="
+          "hash": "7mmaD32z+C38Au8TTStu2x7ysO9ZoNYjsr2iYNISYHM="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.ConsoleColorsInfo.html",
-          "hash": "XjB5fsmJ8IzKM5HR2JslZM+xrYyp7mHDYBfzbtEM3Zg="
+          "hash": "ntl+ACIzewDbObZB3BQWzOx5ko1weosq0Hi7b0WKB00="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.StringTools.html",
-          "hash": "KExiw5ZRqiUaez/DkpmbTNSyLy62y8JJ8exoefU9Sso="
+          "hash": "N+A2L8vcCR9woC8nIkApJbXuhOEinNQKIY4ZuJM1DTQ="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "bm7ct/cPIzcsG7aF2CERIn305Z/b7dzGIDlv/7v8lH4="
+          "hash": "n/3JW5k58wSPboKEYuPpVPFg0SjTeZlzoNK1tGJuBpo="
         }
       },
       "is_incremental": false,
