@@ -35,7 +35,7 @@ namespace ColorSeq
         public static readonly JToken ColorDataJson = JToken.Parse(Properties.Resources.ConsoleColorsData);
 
         /// <summary>
-        /// A simplification for <see cref="Convert.ToChar(Integer)"/> function to return the ESC character
+        /// A simplification for <see cref="Convert.ToChar(int)"/> function to return the ESC character
         /// </summary>
         /// <returns>ESC</returns>
         internal static char GetEsc() => Convert.ToChar(0x1B);
