@@ -17,7 +17,7 @@
   "api/ColorSeq.Color255.html": {
     "href": "api/ColorSeq.Color255.html",
     "title": "Class Color255 | ColorSeq API - Aptivi",
-    "keywords": "Class Color255 Inheritance System.Object Color255 Namespace : ColorSeq Assembly : ColorSeq.dll Syntax public static class Color255 : object Fields ColorDataJson The 255 console colors data JSON token to get information about these colors Declaration public static readonly JToken ColorDataJson Field Value Type Description JToken Methods Initialize255() [Windows] Initializes 255 color support Declaration public static void Initialize255()"
+    "keywords": "Class Color255 Inheritance System.Object Color255 Namespace : ColorSeq Assembly : ColorSeq.dll Syntax public static class Color255 : object Fields ColorDataJson The 255 console colors data JSON token to get information about these colors Declaration public static readonly JToken ColorDataJson Field Value Type Description JToken"
   },
   "api/ColorSeq.ColorTools.html": {
     "href": "api/ColorSeq.ColorTools.html",

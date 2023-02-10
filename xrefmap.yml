@@ -242,19 +242,6 @@ references:
   commentId: F:ColorSeq.Color255.ColorDataJson
   fullName: ColorSeq.Color255.ColorDataJson
   nameWithType: Color255.ColorDataJson
-- uid: ColorSeq.Color255.Initialize255
-  name: Initialize255()
-  href: api/ColorSeq.Color255.html#ColorSeq_Color255_Initialize255
-  commentId: M:ColorSeq.Color255.Initialize255
-  fullName: ColorSeq.Color255.Initialize255()
-  nameWithType: Color255.Initialize255()
-- uid: ColorSeq.Color255.Initialize255*
-  name: Initialize255
-  href: api/ColorSeq.Color255.html#ColorSeq_Color255_Initialize255_
-  commentId: Overload:ColorSeq.Color255.Initialize255
-  isSpec: "True"
-  fullName: ColorSeq.Color255.Initialize255
-  nameWithType: Color255.Initialize255
 - uid: ColorSeq.ColorTools
   name: ColorTools
   href: api/ColorSeq.ColorTools.html
