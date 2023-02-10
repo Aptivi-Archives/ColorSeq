@@ -23,7 +23,6 @@
  */
 
 using System;
-using System.Runtime.InteropServices;
 using Newtonsoft.Json.Linq;
 
 namespace ColorSeq
@@ -34,43 +33,6 @@ namespace ColorSeq
         /// The 255 console colors data JSON token to get information about these colors
         /// </summary>
         public static readonly JToken ColorDataJson = JToken.Parse(Properties.Resources.ConsoleColorsData);
-
-        /// <summary>
-        /// [Windows] Sets console mode
-        /// </summary>
-        /// <param name="hConsoleHandle">Console Handle</param>
-        /// <param name="mode">Mode</param>
-        /// <returns>True if succeeded, false if failed</returns>
-        [DllImport("kernel32.dll", SetLastError = true)]
-        private static extern bool SetConsoleMode(IntPtr hConsoleHandle, int mode);
-
-        /// <summary>
-        /// [Windows] Gets console mode
-        /// </summary>
-        /// <param name="handle">Console handle</param>
-        /// <param name="mode">Mode</param>
-        /// <returns>True if succeeded, false if failed</returns>
-        [DllImport("kernel32.dll", SetLastError = true)]
-        private static extern bool GetConsoleMode(IntPtr handle, out int mode);
-
-        /// <summary>
-        /// [Windows] Gets console handle
-        /// </summary>
-        /// <param name="handle">Handle number</param>
-        /// <returns>True if succeeded, false if failed</returns>
-        [DllImport("kernel32.dll", SetLastError = true)]
-        private static extern IntPtr GetStdHandle(int handle);
-
-        /// <summary>
-        /// [Windows] Initializes 255 color support
-        /// </summary>
-        public static void Initialize255()
-        {
-            var handle = GetStdHandle(-11);
-            GetConsoleMode(handle, out int mode);
-            if (!(mode == 7))
-                SetConsoleMode(handle, mode | 0x4);
-        }
 
         /// <summary>
         /// A simplification for <see cref="Convert.ToChar(Integer)"/> function to return the ESC character
