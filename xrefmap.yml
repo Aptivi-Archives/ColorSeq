@@ -1995,22 +1995,3 @@ references:
   isSpec: "True"
   fullName: ColorSeq.ConsoleColorsInfo.R
   nameWithType: ConsoleColorsInfo.R
-- uid: ColorSeq.StringTools
-  name: StringTools
-  href: api/ColorSeq.StringTools.html
-  commentId: T:ColorSeq.StringTools
-  fullName: ColorSeq.StringTools
-  nameWithType: StringTools
-- uid: ColorSeq.StringTools.IsStringNumeric(System.String)
-  name: IsStringNumeric(String)
-  href: api/ColorSeq.StringTools.html#ColorSeq_StringTools_IsStringNumeric_System_String_
-  commentId: M:ColorSeq.StringTools.IsStringNumeric(System.String)
-  fullName: ColorSeq.StringTools.IsStringNumeric(System.String)
-  nameWithType: StringTools.IsStringNumeric(String)
-- uid: ColorSeq.StringTools.IsStringNumeric*
-  name: IsStringNumeric
-  href: api/ColorSeq.StringTools.html#ColorSeq_StringTools_IsStringNumeric_
-  commentId: Overload:ColorSeq.StringTools.IsStringNumeric
-  isSpec: "True"
-  fullName: ColorSeq.StringTools.IsStringNumeric
-  nameWithType: StringTools.IsStringNumeric

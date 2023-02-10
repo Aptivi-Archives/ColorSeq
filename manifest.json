@@ -113,23 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/ColorSeq.StringTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ColorSeq.StringTools.html",
-          "hash": "N+A2L8vcCR9woC8nIkApJbXuhOEinNQKIY4ZuJM1DTQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/ColorSeq.yml",
       "output": {
         ".html": {
           "relative_path": "api/ColorSeq.html",
-          "hash": "YZPPIXVf6ziX7j8qmwQ6hParDCzeJqbowshdt+G/lg8="
+          "hash": "+cWKgMw2nNoG4U+YHYKrOWHDoapuRh1q1PNxc2VsoUI="
         }
       },
       "is_incremental": false,
@@ -141,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "VFWE9/uKKuWJpv5QAYoX91IdNrfxDJr38kgXaURd7kk="
+          "hash": "pGYYwIdrpXSF+kXKrmnneO10j7qV4B6HOa8EYlLI/WA="
         }
       },
       "is_incremental": false,
@@ -192,7 +180,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 10,
+          "total_file_count": 9,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

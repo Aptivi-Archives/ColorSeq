@@ -42,12 +42,7 @@
   "api/ColorSeq.html": {
     "href": "api/ColorSeq.html",
     "title": "Namespace ColorSeq | ColorSeq API - Aptivi",
-    "keywords": "Namespace ColorSeq Classes Color Color255 ColorTools Color tools and management ConsoleColorsInfo StringTools Enums ColorType Color type enumeration ConsoleColors All 255 console colors"
-  },
-  "api/ColorSeq.StringTools.html": {
-    "href": "api/ColorSeq.StringTools.html",
-    "title": "Class StringTools | ColorSeq API - Aptivi",
-    "keywords": "Class StringTools Inheritance System.Object StringTools Namespace : ColorSeq Assembly : ColorSeq.dll Syntax public static class StringTools : object Methods IsStringNumeric(String) Is the string numeric? Declaration public static bool IsStringNumeric(string expression) Parameters Type Name Description System.String expression The expression Returns Type Description System.Boolean"
+    "keywords": "Namespace ColorSeq Classes Color Color255 ColorTools Color tools and management ConsoleColorsInfo Enums ColorType Color type enumeration ConsoleColors All 255 console colors"
   },
   "index.html": {
     "href": "index.html",
