@@ -25,8 +25,6 @@
 using ColorSeq.Accessibility;
 using Extensification.StringExts;
 using System;
-using System.Collections.Generic;
-using System.Drawing;
 
 namespace ColorSeq
 {

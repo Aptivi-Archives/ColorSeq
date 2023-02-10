@@ -23,7 +23,6 @@
  */
 
 using ColorSeq.Accessibility;
-using Newtonsoft.Json.Schema;
 using System;
 
 namespace ColorSeq
