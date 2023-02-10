@@ -25,6 +25,7 @@
 using ColorSeq.Accessibility;
 using Extensification.StringExts;
 using System;
+using System.Linq.Expressions;
 
 namespace ColorSeq
 {
@@ -143,7 +144,7 @@ namespace ColorSeq
                     throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                 }
             }
-            else if (StringTools.IsStringNumeric(ColorSpecifier) || Enum.IsDefined(typeof(ConsoleColors), ColorSpecifier))
+            else if (double.TryParse(ColorSpecifier, out _) || Enum.IsDefined(typeof(ConsoleColors), ColorSpecifier))
             {
                 // Form the sequences using the information from the color details
                 var ColorsInfo = new ConsoleColorsInfo((ConsoleColors)Enum.Parse(typeof(ConsoleColors), ColorSpecifier));
