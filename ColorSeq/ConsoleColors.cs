@@ -27,7 +27,7 @@ namespace ColorSeq
     /// <summary>
     /// All 255 console colors
     /// </summary>
-    public enum ConsoleColors : int
+    public enum ConsoleColors
     {
         Black,
         DarkRed,

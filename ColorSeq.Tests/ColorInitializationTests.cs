@@ -463,7 +463,7 @@ namespace ColorSeq.Tests
         public void TestInitializeColorInstanceFrom16Colors()
         {
             // Create instance
-            var ColorInstance = new Color(13);
+            var ColorInstance = new Color(ConsoleColors.Magenta);
 
             // Check for null
             ColorInstance.ShouldNotBeNull();
@@ -493,6 +493,35 @@ namespace ColorSeq.Tests
         {
             // Create instance
             var ColorInstance = new Color("94;0;63");
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("94;0;63");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;2;94;0;63m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;2;94;0;63m");
+            ColorInstance.R.ShouldBe(94);
+            ColorInstance.G.ShouldBe(0);
+            ColorInstance.B.ShouldBe(63);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#5E003F");
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from true color numbers
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorNumbers()
+        {
+            // Create instance
+            var ColorInstance = new Color(94, 0, 63);
 
             // Check for null
             ColorInstance.ShouldNotBeNull();

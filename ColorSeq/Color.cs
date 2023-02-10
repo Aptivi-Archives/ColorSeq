@@ -91,6 +91,33 @@ namespace ColorSeq
                 return ColorTools._empty;
             }
         }
+
+        /// <summary>
+        /// Makes a new instance of color class from specifier.
+        /// </summary>
+        /// <param name="R">The red level</param>
+        /// <param name="G">The green level</param>
+        /// <param name="B">The blue level</param>
+        /// <exception cref="Exceptions.ColorException"></exception>
+        public Color(int R, int G, int B)
+            : this($"{R};{G};{B}") { }
+
+        /// <summary>
+        /// Makes a new instance of color class from specifier.
+        /// </summary>
+        /// <param name="ColorDef">The color taken from <see cref="ConsoleColors"/></param>
+        /// <exception cref="Exceptions.ColorException"></exception>
+        public Color(ConsoleColors ColorDef)
+            : this(Convert.ToInt32(ColorDef)) { }
+
+        /// <summary>
+        /// Makes a new instance of color class from specifier.
+        /// </summary>
+        /// <param name="ColorNum">The color number</param>
+        /// <exception cref="Exceptions.ColorException"></exception>
+        public Color(int ColorNum)
+            : this($"{ColorNum}") { }
+
         /// <summary>
         /// Makes a new instance of color class from specifier.
         /// </summary>
@@ -144,7 +171,7 @@ namespace ColorSeq
                     throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                 }
             }
-            else if (double.TryParse(ColorSpecifier, out _) || Enum.IsDefined(typeof(ConsoleColors), ColorSpecifier))
+            else if (double.TryParse(ColorSpecifier, out double specifierNum) && specifierNum <= 255 || Enum.IsDefined(typeof(ConsoleColors), ColorSpecifier))
             {
                 // Form the sequences using the information from the color details
                 var ColorsInfo = new ConsoleColorsInfo((ConsoleColors)Enum.Parse(typeof(ConsoleColors), ColorSpecifier));
@@ -215,106 +242,6 @@ namespace ColorSeq
             {
                 throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
             }
-
-            // Populate the hexadecimal representation of the color
-            Hex = $"#{R:X2}{G:X2}{B:X2}";
-        }
-
-        /// <summary>
-        /// Makes a new instance of color class from specifier.
-        /// </summary>
-        /// <param name="R">The red level</param>
-        /// <param name="G">The green level</param>
-        /// <param name="B">The blue level</param>
-        /// <exception cref="Exceptions.ColorException"></exception>
-        public Color(int R, int G, int B)
-        {
-            if (R < 0 | R > 255)
-                throw new ColorSeqException("Invalid red color specifier.");
-            if (G < 0 | G > 255)
-                throw new ColorSeqException("Invalid green color specifier.");
-            if (B < 0 | B > 255)
-                throw new ColorSeqException("Invalid blue color specifier.");
-
-            // We got the RGB values! First, check to see if we need to filter the color for the color-blind
-            int r = Convert.ToInt32(R);
-            int g = Convert.ToInt32(G);
-            int b = Convert.ToInt32(B);
-            if (ColorTools.EnableColorTransformation)
-            {
-                // We'll transform.
-                (int, int, int) transformed;
-                if (ColorTools.EnableSimpleColorTransformation)
-                    transformed = Vienot1999.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
-                else
-                    transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
-                r = transformed.Item1;
-                g = transformed.Item2;
-                b = transformed.Item3;
-            }
-            PlainSequence = $"{r};{g};{b}";
-            PlainSequenceEnclosed = $"{r};{g};{b}".EncloseByDoubleQuotes();
-            VTSequenceForeground = Color255.GetEsc() + $"[38;2;{PlainSequence}m";
-            VTSequenceBackground = Color255.GetEsc() + $"[48;2;{PlainSequence}m";
-
-            // Populate color properties
-            Type = ColorType.TrueColor;
-            IsBright = r + 0.2126d + g + 0.7152d + b + 0.0722d > 255d / 2d;
-            IsDark = r + 0.2126d + g + 0.7152d + b + 0.0722d < 255d / 2d;
-            this.R = r;
-            this.G = g;
-            this.B = b;
-
-            // Populate the hexadecimal representation of the color
-            Hex = $"#{r:X2}{g:X2}{b:X2}";
-        }
-
-        /// <summary>
-        /// Makes a new instance of color class from specifier.
-        /// </summary>
-        /// <param name="ColorDef">The color taken from <see cref="ConsoleColors"/></param>
-        /// <exception cref="Exceptions.ColorException"></exception>
-        public Color(ConsoleColors ColorDef)
-            : this(Convert.ToInt32(ColorDef)) { }
-
-        /// <summary>
-        /// Makes a new instance of color class from specifier.
-        /// </summary>
-        /// <param name="ColorNum">The color number</param>
-        /// <exception cref="Exceptions.ColorException"></exception>
-        public Color(int ColorNum)
-        {
-            // Form the sequences using the information from the color details
-            var ColorsInfo = new ConsoleColorsInfo((ConsoleColors)Enum.Parse(typeof(ConsoleColors), ColorNum.ToString()));
-
-            // Check to see if we need to transform color. Else, be sane.
-            int r = Convert.ToInt32(ColorsInfo.R);
-            int g = Convert.ToInt32(ColorsInfo.G);
-            int b = Convert.ToInt32(ColorsInfo.B);
-            if (ColorTools.EnableColorTransformation)
-            {
-                // We'll transform.
-                (int, int, int) transformed;
-                if (ColorTools.EnableSimpleColorTransformation)
-                    transformed = Vienot1999.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
-                else
-                    transformed = Brettel1997.Transform(r, g, b, ColorTools.ColorDeficiency, ColorTools.ColorDeficiencySeverity);
-                r = transformed.Item1;
-                g = transformed.Item2;
-                b = transformed.Item3;
-            }
-            PlainSequence = ColorTools.EnableColorTransformation ? $"{r};{g};{b}" : $"{ColorsInfo.ColorID}";
-            PlainSequenceEnclosed = ColorTools.EnableColorTransformation ? $"{r};{g};{b}".EncloseByDoubleQuotes() : $"{ColorsInfo.ColorID}";
-            VTSequenceForeground = ColorTools.EnableColorTransformation ? Color255.GetEsc() + $"[38;2;{PlainSequence}m" : Color255.GetEsc() + $"[38;5;{PlainSequence}m";
-            VTSequenceBackground = ColorTools.EnableColorTransformation ? Color255.GetEsc() + $"[48;2;{PlainSequence}m" : Color255.GetEsc() + $"[48;5;{PlainSequence}m";
-
-            // Populate color properties
-            Type = ColorTools.EnableColorTransformation ? ColorType.TrueColor : ColorsInfo.ColorID >= 16 ? ColorType._255Color : ColorType._16Color;
-            IsBright = ColorTools.EnableColorTransformation ? Convert.ToDouble(r) + 0.2126d + Convert.ToDouble(g) + 0.7152d + Convert.ToDouble(b) + 0.0722d > 255d / 2d : ColorsInfo.IsBright;
-            IsDark = ColorTools.EnableColorTransformation ? Convert.ToDouble(r) + 0.2126d + Convert.ToDouble(g) + 0.7152d + Convert.ToDouble(b) + 0.0722d < 255d / 2d : ColorsInfo.IsDark;
-            R = r;
-            G = g;
-            B = b;
 
             // Populate the hexadecimal representation of the color
             Hex = $"#{R:X2}{G:X2}{B:X2}";
