@@ -137,8 +137,14 @@ namespace ColorSeq
                 {
                     // We got the RGB values! First, check to see if we need to filter the color for the color-blind
                     int r = Convert.ToInt32(ColorSpecifierArray[0]);
+                    if (r < 0 || r > 255)
+                        throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                     int g = Convert.ToInt32(ColorSpecifierArray[1]);
+                    if (g < 0 || g > 255)
+                        throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                     int b = Convert.ToInt32(ColorSpecifierArray[2]);
+                    if (b < 0 || b > 255)
+                        throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                     if (ColorTools.EnableColorTransformation)
                     {
                         // We'll transform.
@@ -178,8 +184,14 @@ namespace ColorSeq
 
                 // Check to see if we need to transform color. Else, be sane.
                 int r = Convert.ToInt32(ColorsInfo.R);
+                if (r < 0 || r > 255)
+                    throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                 int g = Convert.ToInt32(ColorsInfo.G);
+                if (g < 0 || g > 255)
+                    throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                 int b = Convert.ToInt32(ColorsInfo.B);
+                if (b < 0 || b > 255)
+                    throw new ColorSeqException("Invalid color specifier. Ensure that it's on the correct format, which means a number from 0-255 if using 255 colors or a VT sequence if using true color as follows: <R>;<G>;<B>");
                 if (ColorTools.EnableColorTransformation)
                 {
                     // We'll transform.
