@@ -1,41 +1,67 @@
-﻿## ColorSeq
 
-ColorSeq is the library that manages the VT color sequences and gets information about them. It's used to print the VT sequences to change the color, check whether the color is bright or dark, get RGB values from 255 colors, and much more.
+<div align = center>
 
-## Credits
+<br>
+<br>
+    
+<img
+  src = 'https://cdn.jsdelivr.net/gh/Aptivi/ColorSeq@main/ColorSeq/OfficialAppIcon-ColorSeq-512.png'
+  width = 256
+  align = center
+/>
 
-**jonasjacek**  -  *[Console color data](https://jonasjacek.github.io/colors/)*
+<br>
 
-**DaltonLens** - *[Inspiration to create color blindness feature](https://github.com/DaltonLens/libDaltonLens)*
+# ColorSeq
+    
+*A library that manages the VT color sequences.*
 
-## Bibilography for color blindness
+<br>
+<br>
 
-The color blindness feature was created with the help of:
+[![Badge Main]][Main]   
+[![Badge Main Linux]][Main Linux]
 
-- [Hans Brettel, Françoise Viénot, and John D. Mollon, "Computerized simulation of color appearance for dichromats," J. Opt. Soc. Am. A 14, 2647-2655 (1997)](https://opg.optica.org/josaa/abstract.cfm?uri=josaa-14-10-2647)
+[![Badge Latest]][Latest]   
+[![Badge NuGet]][NuGet]
 
-### License
+![Badge Size]   
+[![Badge Downloads]][Releases]
 
-```
-MIT License
+[![Button Manual]][Manual]   
+[![Button Libraries]][Libraries]
 
-Copyright (c) 2022 Aptivi
+</div>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+<br>
+    
+</div>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+<!----------------------------------------------------------------------------->
+
+[Releases]: https://github.com/Aptivi/ColorSeq/releases
+[Latest]: https://github.com/Aptivi/ColorSeq/releases/latest
+[NuGet]: https://www.nuget.org/packages/ColorSeq/
+
+[Main]: https://github.com/Aptivi/ColorSeq/actions/workflows/build-win.yml
+[Main Linux]: https://github.com/Aptivi/ColorSeq/actions/workflows/build-linux.yml
+
+[Libraries]: https://aptivi.gitbook.io/colorseq-manual/project-dependencies
+[Manual]: https://aptivi.gitbook.io/colorseq-manual/
+
+<!----------------------------------[ Badges ]--------------------------------->
+
+[Badge Downloads]: https://img.shields.io/github/downloads/Aptivi/ColorSeq/total?color=217346&label=Downloads&style=for-the-badge&logoColor=white&logo=DocuSign&labelColor=2d9d5f
+[Badge Latest]: https://img.shields.io/github/v/release/Aptivi/ColorSeq?color=212121&include_prereleases&label=github&style=for-the-badge&logoColor=white&logo=AzureArtifacts&labelColor=303030
+[Badge NuGet]: https://img.shields.io/nuget/vpre/ColorSeq?color=012f52&style=for-the-badge&logoColor=white&logo=NuGet&labelColor=004880
+[Badge Size]: https://img.shields.io/github/repo-size/Aptivi/ColorSeq?color=bb4a28&label=size&logoColor=white&style=for-the-badge&logo=GoogleAnalytics&labelColor=E85C33
+
+[Badge Main]: https://github.com/Aptivi/ColorSeq/actions/workflows/build-win.yml/badge.svg
+[Badge Main Linux]: https://github.com/Aptivi/ColorSeq/actions/workflows/build-linux.yml/badge.svg
+
+
+<!---------------------------------[ Buttons ]--------------------------------->
+
+[Button Libraries]: https://img.shields.io/badge/Libraries-EA8220?style=for-the-badge&logoColor=white&logo=AzureArtifacts
+[Button Manual]: https://img.shields.io/badge/Docs-blueviolet?style=for-the-badge&logoColor=white&logo=GitBook
