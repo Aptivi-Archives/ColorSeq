@@ -100,6 +100,31 @@ references:
   isSpec: "True"
   fullName: ColorSeq.Color.Empty
   nameWithType: Color.Empty
+- uid: ColorSeq.Color.Equals(ColorSeq.Color)
+  name: Equals(Color)
+  href: api/ColorSeq.Color.html#ColorSeq_Color_Equals_ColorSeq_Color_
+  commentId: M:ColorSeq.Color.Equals(ColorSeq.Color)
+  fullName: ColorSeq.Color.Equals(ColorSeq.Color)
+  nameWithType: Color.Equals(Color)
+- uid: ColorSeq.Color.Equals(ColorSeq.Color,ColorSeq.Color)
+  name: Equals(Color, Color)
+  href: api/ColorSeq.Color.html#ColorSeq_Color_Equals_ColorSeq_Color_ColorSeq_Color_
+  commentId: M:ColorSeq.Color.Equals(ColorSeq.Color,ColorSeq.Color)
+  fullName: ColorSeq.Color.Equals(ColorSeq.Color, ColorSeq.Color)
+  nameWithType: Color.Equals(Color, Color)
+- uid: ColorSeq.Color.Equals(System.Object)
+  name: Equals(Object)
+  href: api/ColorSeq.Color.html#ColorSeq_Color_Equals_System_Object_
+  commentId: M:ColorSeq.Color.Equals(System.Object)
+  fullName: ColorSeq.Color.Equals(System.Object)
+  nameWithType: Color.Equals(Object)
+- uid: ColorSeq.Color.Equals*
+  name: Equals
+  href: api/ColorSeq.Color.html#ColorSeq_Color_Equals_
+  commentId: Overload:ColorSeq.Color.Equals
+  isSpec: "True"
+  fullName: ColorSeq.Color.Equals
+  nameWithType: Color.Equals
 - uid: ColorSeq.Color.G
   name: G
   href: api/ColorSeq.Color.html#ColorSeq_Color_G
@@ -113,6 +138,19 @@ references:
   isSpec: "True"
   fullName: ColorSeq.Color.G
   nameWithType: Color.G
+- uid: ColorSeq.Color.GetHashCode
+  name: GetHashCode()
+  href: api/ColorSeq.Color.html#ColorSeq_Color_GetHashCode
+  commentId: M:ColorSeq.Color.GetHashCode
+  fullName: ColorSeq.Color.GetHashCode()
+  nameWithType: Color.GetHashCode()
+- uid: ColorSeq.Color.GetHashCode*
+  name: GetHashCode
+  href: api/ColorSeq.Color.html#ColorSeq_Color_GetHashCode_
+  commentId: Overload:ColorSeq.Color.GetHashCode
+  isSpec: "True"
+  fullName: ColorSeq.Color.GetHashCode
+  nameWithType: Color.GetHashCode
 - uid: ColorSeq.Color.Hex
   name: Hex
   href: api/ColorSeq.Color.html#ColorSeq_Color_Hex
@@ -152,6 +190,32 @@ references:
   isSpec: "True"
   fullName: ColorSeq.Color.IsDark
   nameWithType: Color.IsDark
+- uid: ColorSeq.Color.op_Equality(ColorSeq.Color,ColorSeq.Color)
+  name: Equality(Color, Color)
+  href: api/ColorSeq.Color.html#ColorSeq_Color_op_Equality_ColorSeq_Color_ColorSeq_Color_
+  commentId: M:ColorSeq.Color.op_Equality(ColorSeq.Color,ColorSeq.Color)
+  fullName: ColorSeq.Color.Equality(ColorSeq.Color, ColorSeq.Color)
+  nameWithType: Color.Equality(Color, Color)
+- uid: ColorSeq.Color.op_Equality*
+  name: Equality
+  href: api/ColorSeq.Color.html#ColorSeq_Color_op_Equality_
+  commentId: Overload:ColorSeq.Color.op_Equality
+  isSpec: "True"
+  fullName: ColorSeq.Color.Equality
+  nameWithType: Color.Equality
+- uid: ColorSeq.Color.op_Inequality(ColorSeq.Color,ColorSeq.Color)
+  name: Inequality(Color, Color)
+  href: api/ColorSeq.Color.html#ColorSeq_Color_op_Inequality_ColorSeq_Color_ColorSeq_Color_
+  commentId: M:ColorSeq.Color.op_Inequality(ColorSeq.Color,ColorSeq.Color)
+  fullName: ColorSeq.Color.Inequality(ColorSeq.Color, ColorSeq.Color)
+  nameWithType: Color.Inequality(Color, Color)
+- uid: ColorSeq.Color.op_Inequality*
+  name: Inequality
+  href: api/ColorSeq.Color.html#ColorSeq_Color_op_Inequality_
+  commentId: Overload:ColorSeq.Color.op_Inequality
+  isSpec: "True"
+  fullName: ColorSeq.Color.Inequality
+  nameWithType: Color.Inequality
 - uid: ColorSeq.Color.PlainSequence
   name: PlainSequence
   href: api/ColorSeq.Color.html#ColorSeq_Color_PlainSequence
@@ -1943,6 +2007,31 @@ references:
   isSpec: "True"
   fullName: ColorSeq.ConsoleColorsInfo.ColorID
   nameWithType: ConsoleColorsInfo.ColorID
+- uid: ColorSeq.ConsoleColorsInfo.Equals(ColorSeq.ConsoleColorsInfo)
+  name: Equals(ConsoleColorsInfo)
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_Equals_ColorSeq_ConsoleColorsInfo_
+  commentId: M:ColorSeq.ConsoleColorsInfo.Equals(ColorSeq.ConsoleColorsInfo)
+  fullName: ColorSeq.ConsoleColorsInfo.Equals(ColorSeq.ConsoleColorsInfo)
+  nameWithType: ConsoleColorsInfo.Equals(ConsoleColorsInfo)
+- uid: ColorSeq.ConsoleColorsInfo.Equals(ColorSeq.ConsoleColorsInfo,ColorSeq.ConsoleColorsInfo)
+  name: Equals(ConsoleColorsInfo, ConsoleColorsInfo)
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_Equals_ColorSeq_ConsoleColorsInfo_ColorSeq_ConsoleColorsInfo_
+  commentId: M:ColorSeq.ConsoleColorsInfo.Equals(ColorSeq.ConsoleColorsInfo,ColorSeq.ConsoleColorsInfo)
+  fullName: ColorSeq.ConsoleColorsInfo.Equals(ColorSeq.ConsoleColorsInfo, ColorSeq.ConsoleColorsInfo)
+  nameWithType: ConsoleColorsInfo.Equals(ConsoleColorsInfo, ConsoleColorsInfo)
+- uid: ColorSeq.ConsoleColorsInfo.Equals(System.Object)
+  name: Equals(Object)
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_Equals_System_Object_
+  commentId: M:ColorSeq.ConsoleColorsInfo.Equals(System.Object)
+  fullName: ColorSeq.ConsoleColorsInfo.Equals(System.Object)
+  nameWithType: ConsoleColorsInfo.Equals(Object)
+- uid: ColorSeq.ConsoleColorsInfo.Equals*
+  name: Equals
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_Equals_
+  commentId: Overload:ColorSeq.ConsoleColorsInfo.Equals
+  isSpec: "True"
+  fullName: ColorSeq.ConsoleColorsInfo.Equals
+  nameWithType: ConsoleColorsInfo.Equals
 - uid: ColorSeq.ConsoleColorsInfo.G
   name: G
   href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_G
@@ -1956,6 +2045,19 @@ references:
   isSpec: "True"
   fullName: ColorSeq.ConsoleColorsInfo.G
   nameWithType: ConsoleColorsInfo.G
+- uid: ColorSeq.ConsoleColorsInfo.GetHashCode
+  name: GetHashCode()
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_GetHashCode
+  commentId: M:ColorSeq.ConsoleColorsInfo.GetHashCode
+  fullName: ColorSeq.ConsoleColorsInfo.GetHashCode()
+  nameWithType: ConsoleColorsInfo.GetHashCode()
+- uid: ColorSeq.ConsoleColorsInfo.GetHashCode*
+  name: GetHashCode
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_GetHashCode_
+  commentId: Overload:ColorSeq.ConsoleColorsInfo.GetHashCode
+  isSpec: "True"
+  fullName: ColorSeq.ConsoleColorsInfo.GetHashCode
+  nameWithType: ConsoleColorsInfo.GetHashCode
 - uid: ColorSeq.ConsoleColorsInfo.IsBright
   name: IsBright
   href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_IsBright
@@ -1982,6 +2084,32 @@ references:
   isSpec: "True"
   fullName: ColorSeq.ConsoleColorsInfo.IsDark
   nameWithType: ConsoleColorsInfo.IsDark
+- uid: ColorSeq.ConsoleColorsInfo.op_Equality(ColorSeq.ConsoleColorsInfo,ColorSeq.ConsoleColorsInfo)
+  name: Equality(ConsoleColorsInfo, ConsoleColorsInfo)
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_op_Equality_ColorSeq_ConsoleColorsInfo_ColorSeq_ConsoleColorsInfo_
+  commentId: M:ColorSeq.ConsoleColorsInfo.op_Equality(ColorSeq.ConsoleColorsInfo,ColorSeq.ConsoleColorsInfo)
+  fullName: ColorSeq.ConsoleColorsInfo.Equality(ColorSeq.ConsoleColorsInfo, ColorSeq.ConsoleColorsInfo)
+  nameWithType: ConsoleColorsInfo.Equality(ConsoleColorsInfo, ConsoleColorsInfo)
+- uid: ColorSeq.ConsoleColorsInfo.op_Equality*
+  name: Equality
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_op_Equality_
+  commentId: Overload:ColorSeq.ConsoleColorsInfo.op_Equality
+  isSpec: "True"
+  fullName: ColorSeq.ConsoleColorsInfo.Equality
+  nameWithType: ConsoleColorsInfo.Equality
+- uid: ColorSeq.ConsoleColorsInfo.op_Inequality(ColorSeq.ConsoleColorsInfo,ColorSeq.ConsoleColorsInfo)
+  name: Inequality(ConsoleColorsInfo, ConsoleColorsInfo)
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_op_Inequality_ColorSeq_ConsoleColorsInfo_ColorSeq_ConsoleColorsInfo_
+  commentId: M:ColorSeq.ConsoleColorsInfo.op_Inequality(ColorSeq.ConsoleColorsInfo,ColorSeq.ConsoleColorsInfo)
+  fullName: ColorSeq.ConsoleColorsInfo.Inequality(ColorSeq.ConsoleColorsInfo, ColorSeq.ConsoleColorsInfo)
+  nameWithType: ConsoleColorsInfo.Inequality(ConsoleColorsInfo, ConsoleColorsInfo)
+- uid: ColorSeq.ConsoleColorsInfo.op_Inequality*
+  name: Inequality
+  href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_op_Inequality_
+  commentId: Overload:ColorSeq.ConsoleColorsInfo.op_Inequality
+  isSpec: "True"
+  fullName: ColorSeq.ConsoleColorsInfo.Inequality
+  nameWithType: ConsoleColorsInfo.Inequality
 - uid: ColorSeq.ConsoleColorsInfo.R
   name: R
   href: api/ColorSeq.ConsoleColorsInfo.html#ColorSeq_ConsoleColorsInfo_R
