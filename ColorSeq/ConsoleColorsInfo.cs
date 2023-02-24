@@ -23,11 +23,12 @@
  */
 
 using System;
+using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 
 namespace ColorSeq
 {
-    public class ConsoleColorsInfo
+    public class ConsoleColorsInfo : IEquatable<ConsoleColorsInfo>
     {
 
         /// <summary>
@@ -74,5 +75,57 @@ namespace ColorSeq
             else
                 throw new ArgumentOutOfRangeException(nameof(ColorValue), ColorValue, "The color value is outside the range of 0-255.");
         }
+
+        public override bool Equals(object obj) =>
+            base.Equals(obj);
+
+        /// <summary>
+        /// Checks to see if this instance of <see cref="ConsoleColorsInfo"/> is equal to another instance of <see cref="ConsoleColorsInfo"/>
+        /// </summary>
+        /// <param name="other">Another instance of <see cref="ConsoleColorsInfo"/> to compare with this instance</param>
+        /// <returns>True if both <see cref="ConsoleColorsInfo"/> instances match; otherwise, false.</returns>
+        public bool Equals(ConsoleColorsInfo other)
+            => Equals(this, other);
+
+        /// <summary>
+        /// Checks to see if this instance of <see cref="ConsoleColorsInfo"/> is equal to another instance of <see cref="ConsoleColorsInfo"/>
+        /// </summary>
+        /// <param name="other">Another instance of <see cref="ConsoleColorsInfo"/> to compare with another instance</param>
+        /// <param name="other2">Another instance of <see cref="ConsoleColorsInfo"/> to compare with another instance</param>
+        /// <returns>True if both <see cref="ConsoleColorsInfo"/> instances match; otherwise, false.</returns>
+        public bool Equals(ConsoleColorsInfo other, ConsoleColorsInfo other2)
+        {
+            // We can't perform this operation on null.
+            if (other is null)
+                return false;
+
+            // Check all the properties
+            return
+                other.R == other2.R &&
+                other.G == other2.G &&
+                other.B == other2.B &&
+                other.IsBright == other2.IsBright &&
+                other.IsDark == other2.IsDark &&
+                other.ColorID == other2.ColorID
+            ;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = 1196421183;
+            hashCode = hashCode * -1521134295 + ColorID.GetHashCode();
+            hashCode = hashCode * -1521134295 + R.GetHashCode();
+            hashCode = hashCode * -1521134295 + G.GetHashCode();
+            hashCode = hashCode * -1521134295 + B.GetHashCode();
+            hashCode = hashCode * -1521134295 + IsBright.GetHashCode();
+            hashCode = hashCode * -1521134295 + IsDark.GetHashCode();
+            return hashCode;
+        }
+
+        public static bool operator ==(ConsoleColorsInfo a, ConsoleColorsInfo b)
+            => a.Equals(b);
+
+        public static bool operator !=(ConsoleColorsInfo a, ConsoleColorsInfo b)
+            => !a.Equals(b);
     }
 }

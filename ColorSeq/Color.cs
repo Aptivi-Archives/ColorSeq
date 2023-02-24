@@ -25,10 +25,11 @@
 using ColorSeq.Accessibility;
 using Extensification.StringExts;
 using System;
+using System.Collections.Generic;
 
 namespace ColorSeq
 {
-    public class Color
+    public class Color : IEquatable<Color>
     {
         /// <summary>
         /// Either 0-255, or &lt;R&gt;;&lt;G&gt;;&lt;B&gt;
@@ -82,7 +83,7 @@ namespace ColorSeq
             get
             {
                 // Get cached value if cached
-                if (ColorTools._empty != null)
+                if (ColorTools._empty is not null)
                     return ColorTools._empty;
 
                 // Else, cache the empty value and return it
@@ -256,6 +257,68 @@ namespace ColorSeq
 
             // Populate the hexadecimal representation of the color
             Hex = $"#{R:X2}{G:X2}{B:X2}";
+        }
+
+        public override bool Equals(object obj) =>
+            base.Equals(obj);
+
+        /// <summary>
+        /// Checks to see if this instance of the color is equal to another instance of the color
+        /// </summary>
+        /// <param name="other">Another instance of the color to compare with this color</param>
+        /// <returns>True if both the colors match; otherwise, false.</returns>
+        public bool Equals(Color other)
+            => Equals(this, other);
+
+        /// <summary>
+        /// Checks to see if the first instance of the color is equal to another instance of the color
+        /// </summary>
+        /// <param name="other">Another instance of the color to compare with another</param>
+        /// <param name="other2">Another instance of the color to compare with another</param>
+        /// <returns>True if both the colors match; otherwise, false.</returns>
+        public bool Equals(Color other, Color other2)
+        {
+            // We can't perform this operation on null.
+            if (other is null)
+                return false;
+
+            // Check all the properties
+            return
+                other.PlainSequence == other2.PlainSequence &&
+                other.PlainSequenceEnclosed == other2.PlainSequenceEnclosed &&
+                other.VTSequenceForeground == other2.VTSequenceForeground &&
+                other.VTSequenceBackground == other2.VTSequenceBackground &&
+                other.R == other2.R &&
+                other.G == other2.G &&
+                other.B == other2.B &&
+                other.Hex == other2.Hex &&
+                other.Type == other2.Type &&
+                other.IsBright == other2.IsBright &&
+                other.IsDark == other2.IsDark
+            ;
+        }
+
+        public static bool operator ==(Color a, Color b)
+            => a.Equals(b);
+
+        public static bool operator !=(Color a, Color b)
+            => !a.Equals(b);
+
+        public override int GetHashCode()
+        {
+            int hashCode = 628271613;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(PlainSequence);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(PlainSequenceEnclosed);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(VTSequenceForeground);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(VTSequenceBackground);
+            hashCode = hashCode * -1521134295 + R.GetHashCode();
+            hashCode = hashCode * -1521134295 + G.GetHashCode();
+            hashCode = hashCode * -1521134295 + B.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Hex);
+            hashCode = hashCode * -1521134295 + Type.GetHashCode();
+            hashCode = hashCode * -1521134295 + IsBright.GetHashCode();
+            hashCode = hashCode * -1521134295 + IsDark.GetHashCode();
+            return hashCode;
         }
     }
 }
