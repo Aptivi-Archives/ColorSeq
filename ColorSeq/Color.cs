@@ -25,7 +25,6 @@
 using ColorSeq.Accessibility;
 using Extensification.StringExts;
 using System;
-using System.Linq.Expressions;
 
 namespace ColorSeq
 {

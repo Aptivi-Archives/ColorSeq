@@ -22,7 +22,6 @@
  * SOFTWARE.
  */
 
-using Shouldly;
 using System.Diagnostics;
 
 namespace ColorSeq.Tests
