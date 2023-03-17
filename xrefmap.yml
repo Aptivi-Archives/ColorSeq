@@ -93,6 +93,32 @@ references:
   isSpec: "True"
   fullName: ColorSeq.Color.B
   nameWithType: Color.B
+- uid: ColorSeq.Color.ColorEnum16
+  name: ColorEnum16
+  href: api/ColorSeq.Color.html#ColorSeq_Color_ColorEnum16
+  commentId: P:ColorSeq.Color.ColorEnum16
+  fullName: ColorSeq.Color.ColorEnum16
+  nameWithType: Color.ColorEnum16
+- uid: ColorSeq.Color.ColorEnum16*
+  name: ColorEnum16
+  href: api/ColorSeq.Color.html#ColorSeq_Color_ColorEnum16_
+  commentId: Overload:ColorSeq.Color.ColorEnum16
+  isSpec: "True"
+  fullName: ColorSeq.Color.ColorEnum16
+  nameWithType: Color.ColorEnum16
+- uid: ColorSeq.Color.ColorEnum255
+  name: ColorEnum255
+  href: api/ColorSeq.Color.html#ColorSeq_Color_ColorEnum255
+  commentId: P:ColorSeq.Color.ColorEnum255
+  fullName: ColorSeq.Color.ColorEnum255
+  nameWithType: Color.ColorEnum255
+- uid: ColorSeq.Color.ColorEnum255*
+  name: ColorEnum255
+  href: api/ColorSeq.Color.html#ColorSeq_Color_ColorEnum255_
+  commentId: Overload:ColorSeq.Color.ColorEnum255
+  isSpec: "True"
+  fullName: ColorSeq.Color.ColorEnum255
+  nameWithType: Color.ColorEnum255
 - uid: ColorSeq.Color.Empty
   name: Empty
   href: api/ColorSeq.Color.html#ColorSeq_Color_Empty
