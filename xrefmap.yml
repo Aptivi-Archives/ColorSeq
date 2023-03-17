@@ -920,12 +920,6 @@ references:
   commentId: F:ColorSeq.ConsoleColors.DeepSkyBlue4_005faf
   fullName: ColorSeq.ConsoleColors.DeepSkyBlue4_005faf
   nameWithType: ConsoleColors.DeepSkyBlue4_005faf
-- uid: ColorSeq.ConsoleColors.def
-  name: def
-  href: api/ColorSeq.ConsoleColors.html#ColorSeq_ConsoleColors_def
-  commentId: F:ColorSeq.ConsoleColors.def
-  fullName: ColorSeq.ConsoleColors.def
-  nameWithType: ConsoleColors.def
 - uid: ColorSeq.ConsoleColors.DodgerBlue1
   name: DodgerBlue1
   href: api/ColorSeq.ConsoleColors.html#ColorSeq_ConsoleColors_DodgerBlue1
