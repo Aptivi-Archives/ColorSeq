@@ -49,6 +49,12 @@ references:
   commentId: M:ColorSeq.Color.#ctor(ColorSeq.ConsoleColors)
   fullName: ColorSeq.Color.Color(ColorSeq.ConsoleColors)
   nameWithType: Color.Color(ConsoleColors)
+- uid: ColorSeq.Color.#ctor(ConsoleColor)
+  name: Color(ConsoleColor)
+  href: api/ColorSeq.Color.html#ColorSeq_Color__ctor_ConsoleColor_
+  commentId: M:ColorSeq.Color.#ctor(ConsoleColor)
+  fullName: ColorSeq.Color.Color(ConsoleColor)
+  nameWithType: Color.Color(ConsoleColor)
 - uid: ColorSeq.Color.#ctor(System.Int32)
   name: Color(Int32)
   href: api/ColorSeq.Color.html#ColorSeq_Color__ctor_System_Int32_
