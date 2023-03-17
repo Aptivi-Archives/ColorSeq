@@ -284,7 +284,6 @@ namespace ColorSeq
         Grey82,
         Grey85,
         Grey89,
-        Grey93,
-        def = 999
+        Grey93
     }
 }
