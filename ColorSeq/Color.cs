@@ -76,6 +76,14 @@ namespace ColorSeq
         /// </summary>
         public bool IsDark { get; private set; }
         /// <summary>
+        /// The color value converted to <see cref="ConsoleColors"/>. Not applicable [-1] to true color
+        /// </summary>
+        public ConsoleColors ColorEnum255 { get; private set; } = (ConsoleColors)(-1);
+        /// <summary>
+        /// The color value converted to <see cref="ConsoleColor"/>. Not applicable [-1] to true color and 256 colors
+        /// </summary>
+        public ConsoleColor ColorEnum16 { get; private set; } = (ConsoleColor)(-1);
+        /// <summary>
         /// Empty color singleton
         /// </summary>
         public static Color Empty
@@ -188,7 +196,9 @@ namespace ColorSeq
             else if (double.TryParse(ColorSpecifier, out double specifierNum) && specifierNum <= 255 || Enum.IsDefined(typeof(ConsoleColors), ColorSpecifier))
             {
                 // Form the sequences using the information from the color details
-                var ColorsInfo = new ConsoleColorsInfo((ConsoleColors)Enum.Parse(typeof(ConsoleColors), ColorSpecifier));
+                var parsedEnum = (ConsoleColors)Enum.Parse(typeof(ConsoleColors), ColorSpecifier);
+                var parsedEnum16 = specifierNum <= 15 ? (ConsoleColor)Enum.Parse(typeof(ConsoleColor), ColorSpecifier) : default;
+                var ColorsInfo = new ConsoleColorsInfo(parsedEnum);
 
                 // Check to see if we need to transform color. Else, be sane.
                 int r = Convert.ToInt32(ColorsInfo.R);
@@ -224,6 +234,8 @@ namespace ColorSeq
                 R = r;
                 G = g;
                 B = b;
+                ColorEnum255 = Type == ColorType._255Color ? parsedEnum : (ConsoleColors)(-1);
+                ColorEnum16 = Type == ColorType._16Color ? parsedEnum16 : (ConsoleColor)(-1);
             }
             else if (ColorSpecifier.StartsWith("#"))
             {
@@ -302,7 +314,9 @@ namespace ColorSeq
                 other.Hex == other2.Hex &&
                 other.Type == other2.Type &&
                 other.IsBright == other2.IsBright &&
-                other.IsDark == other2.IsDark
+                other.IsDark == other2.IsDark &&
+                other.ColorEnum255 == other2.ColorEnum255 &&
+                other.ColorEnum16 == other2.ColorEnum16
             ;
         }
 
@@ -314,7 +328,7 @@ namespace ColorSeq
 
         public override int GetHashCode()
         {
-            int hashCode = 628271613;
+            int hashCode = 746924978;
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(PlainSequence);
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(PlainSequenceEnclosed);
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(VTSequenceForeground);
@@ -326,6 +340,8 @@ namespace ColorSeq
             hashCode = hashCode * -1521134295 + Type.GetHashCode();
             hashCode = hashCode * -1521134295 + IsBright.GetHashCode();
             hashCode = hashCode * -1521134295 + IsDark.GetHashCode();
+            hashCode = hashCode * -1521134295 + ColorEnum255.GetHashCode();
+            hashCode = hashCode * -1521134295 + ColorEnum16.GetHashCode();
             return hashCode;
         }
     }

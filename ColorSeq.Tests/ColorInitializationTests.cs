@@ -63,6 +63,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#000087");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.DarkBlue_000087);
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -95,6 +97,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#001887");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -127,6 +131,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#001187");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -159,6 +165,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#002986");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -191,6 +199,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#001F86");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -223,6 +233,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeFalse();
             ColorInstance.IsDark.ShouldBeTrue();
             ColorInstance.Hex.ShouldBe("#003045");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -255,6 +267,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#002466");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -288,6 +302,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#F1F100");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -321,6 +337,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#C0F700");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -354,6 +372,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#DADA29");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -387,6 +407,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#AEEA1E");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -420,6 +442,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeFalse();
             ColorInstance.IsDark.ShouldBeTrue();
             ColorInstance.Hex.ShouldBe("#003333");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -453,6 +477,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#002760");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -482,6 +508,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#FF00FF");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Magenta);
         }
 
         /// <summary>
@@ -511,6 +539,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#5E003F");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -540,6 +570,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#5E003F");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -569,6 +601,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeFalse();
             ColorInstance.IsDark.ShouldBeTrue();
             ColorInstance.Hex.ShouldBe("#0F0F0F");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe((ConsoleColor)(-1));
         }
 
         /// <summary>
@@ -598,6 +632,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#FF00FF");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Magenta);
         }
 
         /// <summary>
@@ -627,6 +663,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#FF00FF");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Magenta);
         }
 
         /// <summary>
@@ -656,6 +694,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeTrue();
             ColorInstance.IsDark.ShouldBeFalse();
             ColorInstance.Hex.ShouldBe("#FF00FF");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Magenta);
         }
 
         /// <summary>
@@ -685,6 +725,8 @@ namespace ColorSeq.Tests
             ColorInstance.IsBright.ShouldBeFalse();
             ColorInstance.IsDark.ShouldBeTrue();
             ColorInstance.Hex.ShouldBe("#000000");
+            ColorInstance.ColorEnum255.ShouldBe((ConsoleColors)(-1));
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Black);
         }
     }
 }
