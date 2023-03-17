@@ -630,6 +630,35 @@ namespace ColorSeq.Tests
         }
 
         /// <summary>
+        /// Tests initializing color instance from enum (16 colors)
+        /// </summary>
+        [Test]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromEnum16()
+        {
+            // Create instance
+            var ColorInstance = new Color(ConsoleColor.Magenta);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceBackground.ShouldNotBeNullOrEmpty();
+            ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("13");
+            ColorInstance.Type.ShouldBe(ColorType._16Color);
+            ColorInstance.VTSequenceBackground.ShouldBe(Color255.GetEsc() + "[48;5;13m");
+            ColorInstance.VTSequenceForeground.ShouldBe(Color255.GetEsc() + "[38;5;13m");
+            ColorInstance.R.ShouldBe(255);
+            ColorInstance.G.ShouldBe(0);
+            ColorInstance.B.ShouldBe(255);
+            ColorInstance.IsBright.ShouldBeTrue();
+            ColorInstance.IsDark.ShouldBeFalse();
+            ColorInstance.Hex.ShouldBe("#FF00FF");
+        }
+
+        /// <summary>
         /// Tests getting empty color
         /// </summary>
         [Test]

@@ -104,8 +104,8 @@ namespace ColorSeq.Tests
         public void TestInitializeColorInstanceFrom16ColorsWhetherTheyEqualUsingSymbols()
         {
             // Create instance
-            var ColorInstance = new Color(ConsoleColors.Magenta);
-            var SecondInstance = new Color(ConsoleColors.Magenta);
+            var ColorInstance = new Color(ConsoleColor.Magenta);
+            var SecondInstance = new Color(ConsoleColor.Magenta);
 
             // Check whether they equal
             (ColorInstance == SecondInstance).ShouldBeTrue();
@@ -119,8 +119,8 @@ namespace ColorSeq.Tests
         public void TestInitializeColorInstanceFrom16ColorsWhetherTheyDontEqualUsingSymbols()
         {
             // Create instance
-            var ColorInstance = new Color(ConsoleColors.Magenta);
-            var SecondInstance = new Color(ConsoleColors.Red);
+            var ColorInstance = new Color(ConsoleColor.Magenta);
+            var SecondInstance = new Color(ConsoleColor.Red);
 
             // Check whether they equal
             (ColorInstance != SecondInstance).ShouldBeTrue();
@@ -134,8 +134,8 @@ namespace ColorSeq.Tests
         public void TestInitializeColorInstanceFrom16ColorsWhetherTheyEqualUsingEquals()
         {
             // Create instance
-            var ColorInstance = new Color(ConsoleColors.Magenta);
-            var SecondInstance = new Color(ConsoleColors.Magenta);
+            var ColorInstance = new Color(ConsoleColor.Magenta);
+            var SecondInstance = new Color(ConsoleColor.Magenta);
 
             // Check whether they equal
             ColorInstance.Equals(SecondInstance).ShouldBeTrue();
@@ -149,8 +149,8 @@ namespace ColorSeq.Tests
         public void TestInitializeColorInstanceFrom16ColorsWhetherTheyDontEqualUsingEquals()
         {
             // Create instance
-            var ColorInstance = new Color(ConsoleColors.Magenta);
-            var SecondInstance = new Color(ConsoleColors.Red);
+            var ColorInstance = new Color(ConsoleColor.Magenta);
+            var SecondInstance = new Color(ConsoleColor.Red);
 
             // Check whether they equal
             ColorInstance.Equals(SecondInstance).ShouldBeFalse();
