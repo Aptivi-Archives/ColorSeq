@@ -23,7 +23,6 @@
  */
 
 using ColorSeq.Accessibility;
-using Extensification.StringExts;
 using System;
 using System.Collections.Generic;
 
@@ -176,7 +175,7 @@ namespace ColorSeq
 
                     // Form the sequences
                     PlainSequence = $"{r};{g};{b}";
-                    PlainSequenceEnclosed = $"{r};{g};{b}".EncloseByDoubleQuotes();
+                    PlainSequenceEnclosed = $"\"{r};{g};{b}\"";
                     VTSequenceForeground = Color255.GetEsc() + $"[38;2;{PlainSequence}m";
                     VTSequenceBackground = Color255.GetEsc() + $"[48;2;{PlainSequence}m";
 
@@ -223,7 +222,7 @@ namespace ColorSeq
                     b = transformed.Item3;
                 }
                 PlainSequence = ColorTools.EnableColorTransformation ? $"{r};{g};{b}" : $"{ColorsInfo.ColorID}";
-                PlainSequenceEnclosed = ColorTools.EnableColorTransformation ? $"{r};{g};{b}".EncloseByDoubleQuotes() : $"{ColorsInfo.ColorID}";
+                PlainSequenceEnclosed = ColorTools.EnableColorTransformation ? $"\"{r};{g};{b}\"" : $"{ColorsInfo.ColorID}";
                 VTSequenceForeground = ColorTools.EnableColorTransformation ? Color255.GetEsc() + $"[38;2;{PlainSequence}m" : Color255.GetEsc() + $"[38;5;{PlainSequence}m";
                 VTSequenceBackground = ColorTools.EnableColorTransformation ? Color255.GetEsc() + $"[48;2;{PlainSequence}m" : Color255.GetEsc() + $"[48;5;{PlainSequence}m";
 
@@ -239,7 +238,8 @@ namespace ColorSeq
             }
             else if (ColorSpecifier.StartsWith("#"))
             {
-                int ColorDecimal = Convert.ToInt32(ColorSpecifier.RemoveLetter(0), 16);
+                string finalSpecifier = ColorSpecifier.Substring(1);
+                int ColorDecimal = Convert.ToInt32(finalSpecifier, 16);
 
                 // Convert the RGB values to numbers
                 R = (byte)((ColorDecimal & 0xFF0000) >> 0x10);
@@ -261,7 +261,7 @@ namespace ColorSeq
 
                 // We got the RGB values! Form the sequences
                 PlainSequence = $"{R};{G};{B}";
-                PlainSequenceEnclosed = $"{R};{G};{B}".EncloseByDoubleQuotes();
+                PlainSequenceEnclosed = $"\"{R};{G};{B}\"";
                 VTSequenceForeground = Color255.GetEsc() + $"[38;2;{PlainSequence}m";
                 VTSequenceBackground = Color255.GetEsc() + $"[48;2;{PlainSequence}m";
 
