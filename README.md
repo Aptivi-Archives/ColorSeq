@@ -16,6 +16,8 @@
     
 *A library that manages the VT color sequences.*
 
+*NOTE: This library is being replaced by Terminaux.*
+
 <br>
 <br>
 
